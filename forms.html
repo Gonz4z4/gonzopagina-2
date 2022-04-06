@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzo forms</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header seccion">
+        <h1>Formulario:</h1>
+            <p>¡Complete este formulario por favor!</p>
+    </header>
+    <form action="mailto:gonzaloariaslucini@gmail.com">
+        <Fieldset>
+            <legend>Datos personales</legend>
+            <label for="fname">Nombre:</label>
+                <br>
+                <input accesskey="x" type="text" id="fname" name="Nombre" placeholder="Gonzo">
+                <br><br>
+            <label for="Apellido">Apellido:</label>
+                <br>
+                <input type="text" id="Apellido" name="Apellido" placeholder="Arias">
+                <br><br>
+            <label for="Cumple">Tu fecha de nacimiento:</label>
+                <br>
+                <input type="date" for="Cumple" name="Cumple">
+                <br><br>
+            <label for="radio">Sexo:</label>
+                <br>
+                <input type="radio" id="Si" value="Si" name="sexo">
+                    <label for="Si">Si</label>
+                    <br>
+                <input type="radio" id="no" value="no" name="sexo">
+                    <label for="No">No</label>
+                    <br>
+                <input type="radio" id="quiza" value="quiza" name="sexo">
+                    <label for="quiza">Quiza</label>
+                <br><br>
+            <label for="rango">Tu rango:</label>
+                <br>
+                <input type="range" name="rango" id="rango">
+                <br><br>
+            <label for="color">Tu color favorito:</label>
+                <input type="color" id="color" name="color">
+                <br>
+                <input type="hidden" id="escondido" name="escondido" value="3487">
+                <br>
+            <label for="contraseña">Contraseña</label><br>
+                <input type="password">
+                <br>
+        </Fieldset>
+        <fieldset>
+            <legend>Tus cosas</legend>
+            <label for="mensaje">Tu mensaje:</label>
+                <br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Ingrese su mensaje aquí"></textarea>
+                <br>
+            <label for="url">Tu página:</label>
+                <br>
+                <input type="url" id="url" name="url" placeholder="www.tupagina.com">
+                <br>
+            <label for="email">Tu mail:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="tumail@gmail.com">
+                <br>
+            <label for="week">Tu semana:</label>
+                <br>
+                <input type="week" name="week" id="week">
+                <br>
+            <label for="numeros">Tu numero favorito:</label>
+                <br>
+                <input type="number" id="numeros" name="numero" placeholder="1">
+                <br>
+            <label for="mes">Tu mes favorito:</label>
+                <br>
+                <input type="month">
+                <br>
+            <label for="hora">Tu hora favorita:</label>
+                <br>
+                <input type="time">
+                <br>
+        </fieldset>
+        <fieldset>
+            <legend>Cosas</legend>
+            <label for="busqueda">Para buscar:</label>
+                <br>
+                <input type="search" id="busqueda" name="busqueda" placeholder="Busqueda...">
+                <br>
+                <br>
+                <input type="button" value="Mis bolas">
+                <button type="button">Tus bolas</button>
+                <br>
+            <Label for="readonly">Tu mamá?</Label>
+                <br>
+                <input type="text" readonly value="Tu mama" size="7">
+                <br>
+            <label for="disabled">No usar, no funciona</label>
+                <br>
+                <input type="text" disabled value="no funca :(" size="7">
+                <br>
+            <label for="step">Multiplo de 3 favorito:</label>
+                <br>
+                <input type="number" id=step step="3" >
+                <br>
+            <label for="option">Género</label>
+                <br>
+                <select name="genero" id="option">Género:
+                    <option value="nb" selected>No Binario</option>
+                    <option value="noresp">Prefiero no responder</option>
+                    <option value="Otro">Otro</option>
+                    <option value="hom">Hombre</option>
+                    <option value="muj">Mujer</option>
+                    <optgroup label="Géneros prohibidos">
+                        <option value="crt">Criatura</option>
+                        <option value="gonza">Gonzo</option>
+                        <option value="ninguno">Ninguno, no te refieras a mí</option>
+                    </optgroup>
+                </select>
+                <br>
+            <label for="datalist">Como preferis que te llamen:</label><br>
+                <input list="datalist">
+                    <datalist id="datalist">
+                        <option value="Gonzo">
+                        <option value="Gonza">
+                        <option value="Gon">
+                        <option value="Zalo">
+                        <option value="Gonzalo">
+                </datalist>
+            <br>
+            <label for="checklist">Yo soy:</label><br>
+                <input type="checkbox" id="bobo" name="bobo">
+                    <label for="bobo">Bobo</label><br>
+                <input type="checkbox" id="maloliente" name="maloliente">
+                    <label for="maloliente">Maloliente</label><br>
+                <input type="checkbox" id="sucio" name="sucio">
+                    <label for="sucio">Sucio</label>
+<!-- Name sirve para que lleguen con ese nombre al servidor los datos dados-->
+        </fieldset><br>
+            <input type="submit">
+            <input type="reset">
+    </form>
+    <br>
+    <footer class="footer seccion">
+        <h2><a target="_blank" href="Index.html">Volver a la pagina principal</a></h2>
+    </footer>
+    <a id="volver1" href="#header"><img id="volver" src="https://i.redd.it/w7kyvqrjo3q81.jpg" alt="arriba"></a>
+    
+</body>
+</html>
